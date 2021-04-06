@@ -25,5 +25,5 @@ urlpatterns = [
     path("", include("news.urls")),
 ]
 
-if settings.DEBUG:
+if settings.DEBUG: # работает только в отладочном режиме
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
